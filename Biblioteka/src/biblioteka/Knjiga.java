@@ -8,6 +8,18 @@ public class Knjiga {
 	private int izdanje;
 	private Autor[] autori;
 	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
+	
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		return super.hashCode();
+	}
+
 	public Autor[] getAutori() {
 		return autori;
 	}
