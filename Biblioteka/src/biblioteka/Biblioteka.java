@@ -32,7 +32,12 @@ public class Biblioteka implements BibliotekaInterfejs {
 		
 		LinkedList<Knjiga> novaLista = new LinkedList<Knjiga>();
 		
-		
+		for (int i = 0; i < knjige.size(); i++) {
+			if (knjige.get(i).getNaslov().contains(naslov)) {
+				novaLista.add(knjige.get(i));
+			}
+
+		}
 		
 		return novaLista;
 	}
